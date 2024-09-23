@@ -1,20 +1,24 @@
-// index.js
-
 const express = require('express');
-const app = express();
+const cors = require('cors');
 const animalsRoute = require('./api/animals');
+const fruitsRoute = require('./api/fruits');
+const path = require('path');
+const app = express();
 
-const port = process.env.PORT || 3000;
+// Enable CORS for all routes
+app.use(cors());
+
+// Serve static files from the images directory
+app.use(express.static(path.join(__dirname, 'images')));
 
 // Use the animals route
 app.use('/animals', animalsRoute);
+// USe the fruits route
+app.use('/fruits', fruitsRoute);
 
-// Root route
-app.get('/', (req, res) => {
-    res.send('Welcome to the Animal API');
-});
+const port = process.env.PORT || 3000;
 
-// Start the server
 app.listen(port, () => {
     console.log(`API running on http://localhost:${port}`);
 });
+
