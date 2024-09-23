@@ -16,6 +16,12 @@ app.use('/animals', animalsRoute);
 // USe the fruits route
 app.use('/fruits', fruitsRoute);
 
+
+// Detail
+app.get('/', (req, res) => {
+    res.send('Hello Guy! Welcome to CodeWithAngad API');
+});
+
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
