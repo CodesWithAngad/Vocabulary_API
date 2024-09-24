@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const animalsRoute = require('./api/animals');
 const fruitsRoute = require('./api/fruits');
+const birdsRoute = require('./api/birds');
 const path = require('path');
 const app = express();
 
@@ -15,6 +16,8 @@ app.use(express.static(path.join(__dirname, 'images')));
 app.use('/animals', animalsRoute);
 // USe the fruits route
 app.use('/fruits', fruitsRoute);
+// Use the birds route
+app.use('/birds', birdsRoute);
 
 
 // Detail
