@@ -135,23 +135,8 @@ const birds = [
     },
     {
         id: 27, 
-        name: 'Raven', 
-        image: 'http://vocabulary-api-codewithangad.vercel.app/birds/raven.jpeg'
-    },
-    {
-        id: 28, 
-        name: 'Sparrowhawk', 
-        image: 'http://vocabulary-api-codewithangad.vercel.app/birds/sparrowhawk.jpeg'
-    },
-    {
-        id: 29, 
-        name: 'Raven', 
-        image: 'http://vocabulary-api-codewithangad.vercel.app/birds/raven.jpeg'
-    },
-    {
-        id: 30, 
-        name: 'Sparrowhawk', 
-        image: 'http://vocabulary-api-codewithangad.vercel.app/birds/sparrowhawk.jpeg'
+        name: 'crow', 
+        image: 'http://vocabulary-api-codewithangad.vercel.app/birds/crow.jpeg'
     }
 ]
 
