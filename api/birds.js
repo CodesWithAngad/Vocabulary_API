@@ -135,7 +135,7 @@ const birds = [
     },
     {
         id: 27, 
-        name: 'crow', 
+        name: 'Crow', 
         image: 'http://vocabulary-api-codewithangad.vercel.app/birds/crow.jpeg'
     }
 ]
