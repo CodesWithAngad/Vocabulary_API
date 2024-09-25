@@ -3,6 +3,7 @@ const cors = require('cors');
 const animalsRoute = require('./api/animals');
 const fruitsRoute = require('./api/fruits');
 const birdsRoute = require('./api/birds');
+const vegetablesRoute = require('./api/vegetables');
 const path = require('path');
 const app = express();
 
@@ -18,6 +19,8 @@ app.use('/animals', animalsRoute);
 app.use('/fruits', fruitsRoute);
 // Use the birds route
 app.use('/birds', birdsRoute);
+// Use the vegetables route
+app.use('/vegetables', vegetablesRoute);
 
 
 // Detail
